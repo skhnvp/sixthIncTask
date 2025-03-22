@@ -5,19 +5,7 @@ public class SumAll extends Fraction {
 
     SumAll(Number... nums) {
         for (Number n : nums) {
-            if (n instanceof Integer) {
-                sum += n.doubleValue();
-            } else if (n instanceof Double) {
-                sum += n.doubleValue();
-            } else if (n instanceof Float) {
-                sum += n.doubleValue();
-            } else if (n instanceof Long) {
-                sum += n.doubleValue();
-            } else if (n instanceof Fraction) {
-                sum += n.doubleValue();
-            } else {
-                throw new IllegalArgumentException("Неизвестный числовой тип");
-            }
+            sum += n.doubleValue();
         }
 
     }
